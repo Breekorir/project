@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of a Full-Stack Web Developer">
-    <title>John Doe - Full-Stack Developer</title>
+    <title>- Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
             <div class="logo">Brigid Korir</div>
+            <nav id="mobile-menu">
             <ul class="nav-links">
+                <button class="ind" id="ind"><ion-icon name="close-outline"></ion-icon></button>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="inc"><ion-icon name="menu-outline"></ion-icon></button>
 
-        </nav>
+            </ul></nav>
+            <button class="inc" id="inc"><ion-icon name="menu-outline"></ion-icon></button>
+
+        
 
     </header>
 
     <section id="hero">
         <div class="hero-content">
-            <h1>Hi, I'm Brigid Korir</h1>
+            <h2>Hello! I'm Brigid Korir</h2>
             <p>Full-Stack Web Developer</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
@@ -40,7 +42,7 @@
     <section id="projects">
         <div class="container">
             <h2>My Projects</h2>
-            <div class="project-card">
+            <div class="project-card1">
                 <img src="./images/project1.jpg" alt="Project 1">
                 <div class="project-info">
                     <h3>Project One</h3>
@@ -49,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card1">
                 <img src="./images/project2.webp" alt="Project 2">
                 <div class="project-info">
                     <h3>Project Two</h3>
@@ -142,6 +144,29 @@
                 <p>Found answers and motivation on forums like Stack Overflow—don’t code alone!</p>
             </div>
         </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
     <footer>
         <div class="container">
             
@@ -175,12 +200,10 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+<script src="main.js"></script>
 </body>
 </html>
 
-</body>
-</html>
 
             <p>&copy; 2025 Brigid Korir. All rights reserved.</p>
         </div>

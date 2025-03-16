@@ -7,18 +7,30 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color:#e74c3c;
+    background-color:#4C2300;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #4C2300;
     color: #fff;
     position: sticky;
     padding: 10px;
+    display: flex;
+justify-content: space-between;
+
 }
 .inc{
     display: none;
+    background: none;
+    background-color: none;
+}
+
+.ind{
+    display: none;
+    background: none;
+    background-color: none;
+    position:relative ;
 }
 nav {
     display: flex;
@@ -33,6 +45,8 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
+    
+
 }
 
 .nav-links li {
@@ -65,7 +79,7 @@ nav {
 
 .hero-content p {
     font-size: 1.5rem;
-    color: #333;
+    color: #fff;
 }
 
 .btn {
@@ -95,14 +109,14 @@ section {
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
 }
 
 #projects {
-    background-color:#e74c3c;
+display: flex;
 }
 
-.project-card {
+.project-card1 {
     display: flex;
     margin-bottom: 20px;
     background-color: #f9f9f9;
@@ -110,11 +124,14 @@ h2 {
     overflow: hidden;
 }
 
-.project-card img {
+.project-card1 img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-right: 2px solid #ddd;
+}
+.project-card1 p{
+    color: #333;
 }
 
 .project-info {
@@ -123,6 +140,7 @@ h2 {
 
 .project-info h3 {
     font-size: 1.8rem;
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -167,7 +185,7 @@ button:hover {
 }
 
 footer {
-    background-color:#333;
+    
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -177,6 +195,7 @@ footer {
     color: white;
     padding: 2rem;
     text-align: center;
+    background: url(./images/penal.png);
 }
 
 .footer-container {
@@ -214,11 +233,11 @@ footer {
     nav ul {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 70px;
+        position: relative;
+        top: 5px;
         left: 0;
-        right: 0;
-        background-color: white;
+        right: 0px;
+        background-color:#666 ;
         padding: 1rem;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
@@ -227,6 +246,19 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+    
+header nav{
+    position: fixed;
+    inset: 0;
+    display: none;/*hiding nav by default --use js to bring back*/
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 25px;
+    color: #333;
+}
     nav{
         display: flex;
         justify-content: space-between;
@@ -238,12 +270,16 @@ footer {
 
     nav ul li {
         margin: 1rem 0;
+        color: #333;
     }
 
     .inc {
         display: block;
     }
 
+    .ind {
+        display: block;
+    }
     .hero-text h2 {
         font-size: 1.8rem;
     }
@@ -265,11 +301,11 @@ footer {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #fff;
 }
 
-h1, h2, h3 {
-    color: #333;
+h1,h2,h3{
+    color: #fff;
 }
 
 h1 {
@@ -340,6 +376,7 @@ h2 {
 
 .milestone h3 {
     margin: 0 0 10px;
+    color: #333;
 }
 
 .milestone p {
@@ -354,6 +391,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+
 }
 
 .project-card {
@@ -363,6 +401,7 @@ h2 {
     padding: 20px;
     text-align: center;
     transition: transform 0.2s;
+    
 }
 
 .project-card:hover {
@@ -371,6 +410,7 @@ h2 {
 
 .project-card h3 {
     margin: 0 0 10px;
+    color: #333;
 }
 
 .project-card p {
@@ -405,10 +445,14 @@ h2 {
 
 .lesson h3 {
     margin: 0 0 10px;
+    color: #333;
 }
 
 .lesson p {
-    color: #666;
+    color:#333;
+}
+.lessons h2{
+    color: #333;
 }
 
 /* Responsive Adjustments */
