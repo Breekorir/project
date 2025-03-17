@@ -114,7 +114,12 @@ h2 {
 
 #projects {
 display: flex;
+background-color: #f4f4f4;
 }
+#projects h2{
+    color: #555;
+}
+
 
 .project-card1 {
     display: flex;
@@ -179,6 +184,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+span{
+    color: #333;
+}
 
 button:hover {
     background-color: #555;
@@ -189,6 +197,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+footer p{
+    color:blueviolet;
 }
 
 footer {
@@ -248,7 +259,7 @@ footer {
     }
     
 header nav{
-    position: fixed;
+    position:fixed;
     inset: 0;
     display: none;/*hiding nav by default --use js to bring back*/
     gap: 30px;
@@ -427,12 +438,19 @@ h2 {
 .project-card a:hover {
     text-decoration: underline;
 }
-
+.projects{
+    background-color:#555;
+}
 /* Lessons Section */
 .lessons {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
+}
+.contact h2{
+    color: #333;
+    
+    
 }
 
 .lesson {
@@ -442,7 +460,9 @@ h2 {
     border-left: 4px solid #007BFF;
     border-radius: 4px;
 }
-
+.contact{
+    background: linear-gradient(to right, rgba(255,0,0,0.8), rgba(0,0,255,0.5));
+}
 .lesson h3 {
     margin: 0 0 10px;
     color: #333;
@@ -468,4 +488,17 @@ h2 {
         left: -20px !important;
         right: auto !important;
     }
+    
+@keyframes slide-in-left{
+    0%{
+        transform: translateX(-1000px);
+        object-position: 0;
+    
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    }
+    
 }
